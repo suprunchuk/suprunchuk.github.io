@@ -1,4 +1,6 @@
 ## Welcome to GitHub Pages
+# Hi there 👋
+![](https://github.com/suprunchuk/suprunchuk-private/blob/main/slide1.png)
 
 You can use the [editor on GitHub](https://github.com/suprunchuk/suprunchuk.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
