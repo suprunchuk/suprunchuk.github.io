@@ -1,4 +1,3 @@
-## Welcome to GitHub Pages
 # Hi there 👋
 ![](https://github.com/suprunchuk/suprunchuk-private/blob/main/slide1.png)
 
