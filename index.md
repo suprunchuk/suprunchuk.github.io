@@ -1,6 +1,25 @@
 # Hi there 👋
 ![](https://github.com/suprunchuk/suprunchuk.github.io/blob/main/slide1.png)
+```markdown
+👹подборка: 5 самых бесполезных сайтов в Интернете
 
+ 5 абсолютно бесполезных сайтов, зайдя на которые вы совершенно точно потратите своё время впустую.
+
+The Passive Aggressive Password Machine — введите любой пароль, а сайт выдаст злобный комментарий о его сложности.
+📌 https://trypap.com/
+
+Сделать все хорошо — Каждый мечтает о кнопке, которая делает все хорошо. Ну, вот - она здесь.
+📌 http://button.dekel.ru/
+
+Bunny mark — А этот сайт измерит мощность вашего компьютера … при помощи зайцев.
+📌 https://www.goodboydigital.com/pixijs/bunnymark/
+
+Random Things To Do — Генератор разного рода безумных идей. Если бы не этот сайт, вы бы о таком точно никогда не подумали.
+📌 https://randomthingstodo.com/
+
+Find the Invisible Cow — Интернет-версия игры «горячо - холодно», где вам предстоит найти невидимую корову по интенсивности возгласов «Cow».
+📌 http://www.findtheinvisiblecow.com/
+```
 You can use the [editor on GitHub](https://github.com/suprunchuk/suprunchuk.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
