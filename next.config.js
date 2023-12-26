@@ -6,11 +6,10 @@ const withNextra = require('nextra')({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  // basePath: "/nextjs-github-pages",
-
+  output: 'export',
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './my-loader.ts',
   },
 };
 
