@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Pasha Suprunchuk]]></title>
+        <description><![CDATA[Pasha Suprunchuk]]></description>
+        <link>https://suprunchuk.github.io</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Tue, 26 Dec 2023 21:12:08 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Markdown Examples]]></title>
+            <description><![CDATA[View examples of all possible Markdown options.]]></description>
+            <link>/posts/markdown</link>
+            <guid isPermaLink="true">/posts/markdown</guid>
+            <category><![CDATA[web development]]></category>
+            <dc:creator><![CDATA[Pasha]]></dc:creator>
+            <pubDate>Mon, 25 Dec 2023 21:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
