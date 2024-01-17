@@ -4,7 +4,7 @@
         <description><![CDATA[Pasha Suprunchuk]]></description>
         <link>https://suprunchuk.github.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 17 Jan 2024 21:41:33 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jan 2024 21:47:22 GMT</lastBuildDate>
         <item>
             <title><![CDATA[Markdown Examples]]></title>
             <description><![CDATA[View examples of all possible Markdown options.]]></description>
@@ -15,8 +15,8 @@
             <pubDate>Mon, 25 Dec 2023 21:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Установка Microsoft Office помощью Office Deployment Tool (ODT)]]></title>
-            <description><![CDATA[Подробное руководство по установке Microsoft Office с использованием ODT.]]></description>
+            <title><![CDATA[Установка Microsoft Office с помощью Office Deployment Tool (ODT)]]></title>
+            <description><![CDATA[Подробное руководство по установке Microsoft Office]]></description>
             <link>/posts/microsoft-office-install</link>
             <guid isPermaLink="true">/posts/microsoft-office-install</guid>
             <category><![CDATA[windows setup]]></category>
