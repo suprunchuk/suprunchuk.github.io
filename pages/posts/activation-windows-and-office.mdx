@@ -1,0 +1,78 @@
+---
+title: Активация Windows и Office с помощью HWID / Ohook
+date: 2024/01/23
+description: Активация Windows и Office с использованием методов активации HWID/Ohook.
+tag: windows setup
+author: Pasha
+---
+
+import Image from 'next/image'
+import { Tabs } from 'nextra/components'
+import { Callout } from 'nextra/components'
+import { Steps } from 'nextra/components'
+ 
+ Для Windows 8.1/10/11
+
+<Steps>
+### Шаг 1
+ 
+Щелкните правой кнопкой мыши по меню "Пуск" в Windows и выберите **"PowerShell (Администратор)"** или **"Терминал (Администратор)"** (не CMD).
+ 
+### Шаг 2
+ 
+Скопируйте и вставьте следующий код, затем нажмите Enter:
+
+```powershell
+irm https://massgrave.dev/get | iex
+```
+
+### Шаг 3
+
+Выберите метод активации, нажав соответствующую цифру.
+
+<p align="center" width="100%">
+<Image src="/assets/activation-windows-and-office/MAS_AIO.png" alt="Office image" width={600} height={600} />
+</p>
+
+1) Метод **HWID**.
+
+2) Метод **Ohook**.
+
+3)  Метод KMS38
+
+4) Онлайн-метод KMS
+    
+| Тип активации | Поддерживаемый продукт | Период активации       |
+|---------------|------------------------|------------------------|
+| HWID          | Windows 10-11          | Постоянная             |
+| Ohook         | Office                 | Постоянная             |
+| KMS38         | Windows 10-11-Server   | До 2038 года           |
+| Online KMS    | Windows / Office       | 180 дней. Пожизненно с обновлением через задачу |
+
+<Callout type="info" emoji="ℹ️">
+    Для активации Windows просто жмём 1, для Office 2.
+</Callout>
+
+### Шаг 4
+
+Дожидаемся соответствующей надписи
+
+<Tabs items={['Для Windows', 'Для Office']}>
+  <Tabs.Tab>
+    <p align="center" width="100%">
+        <Image src="/assets/activation-windows-and-office/MAS_HWID.png" alt="Office image" width={700} height={700} />
+    </p>
+</Tabs.Tab>
+
+  <Tabs.Tab>
+    <p align="center" width="100%">
+        <Image src="/assets/activation-windows-and-office/MAS_Ohook.png" alt="Office image" width={700} height={700} />
+    </p>
+  </Tabs.Tab>
+</Tabs>
+
+### Шаг 5
+
+Вот и все. Консоль можно закрыть нажав любую клавишу.
+
+</Steps>
