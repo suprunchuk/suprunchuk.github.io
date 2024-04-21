@@ -5,7 +5,6 @@ export default {
     <footer>
       <small>
         <time>{YEAR}</time> © Pasha Suprunchuk.
-        {/* <a href="/feed.xml">RSS</a> */}
       </small>
       <style jsx>{`
         footer {
