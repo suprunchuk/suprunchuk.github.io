@@ -1,0 +1,120 @@
+---
+title: Установка Office 2024 LTSC с сайта Microsoft и активация навсегда
+date: 2024/06/08
+description: Подробное руководство по установке Microsoft Office
+tag: windows setup
+author: Pasha
+---
+
+import Image from 'next/image'
+import { Steps } from "nextra/components";
+import { Callout } from 'nextra/components'
+
+<br />
+<p align="center" width="100%">
+<Image src="/assets/microsoft-office-2024-ltsc-install/2024.png" alt="Office image" width={800} height={800} />
+</p>
+
+# Установка Office 2024 LTSC с помощью Office Deployment Tool (ODT)
+
+Для установки Microsoft Office 2024 с использованием Office Deployment Tool (ODT), вам нужно выполнить следующие шаги:
+
+<Steps>
+### Скачивание Office Deployment Tool (ODT):
+
+-   Перейдите на [официальный сайт Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=49117).
+-   Нажмите "Download" (Скачать), чтобы загрузить Office Deployment Tool.
+-   Запустите, для извлечения файлов ODT. В результате получите файл `setup.exe` и несколько примеров файлов конфигураций.
+
+<p align="center" width="100%">
+<Image src="/assets/microsoft-office-2024-ltsc-install/odt.png" alt="Office image" width={800} height={800} />
+</p>
+
+### Генерация файла конфигурации
+
+- Используйте пример файла configuration-Office2021Enterprise.xml, скопировав его под именем `configuration.xml`.
+<p align="center" width="100%">
+<Image src="/assets/microsoft-office-2024-ltsc-install/config.png" alt="Office image" width={500} height={500} />
+</p>
+
+- Откройте и отредактируйте его следующим образом:
+
+```xml
+<Configuration>
+
+  <Add OfficeClientEdition="64" Channel="Current">
+    <Product ID="ProPlus2024Volume">
+      <Language ID="ru-ru" />
+      <ExcludeApp ID="Access" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="OneNote" />
+      <ExcludeApp ID="Outlook" />
+      <ExcludeApp ID="Publisher" />
+    </Product>
+  </Add>
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+</Configuration>
+```
+
+- В данном примере будут установлены только Word, Excel и PowerPoint. 
+Параметр OfficeClientEdition="64" указывает на 64-битную версию Office, а Channel="Current" указывает на текущий канал обновлений.
+
+
+### Изменение региона
+
+- Откройте PowerShell от имени администратора и выполните следующую команду:
+
+```powershell
+reg add "HKCU\Software\Microsoft\Office\16.0\Common\ExperimentConfigs\Ecs" /v "CountryCode" /t REG_SZ /d "std::wstring|US" /f
+```
+Эта команда изменит региональные настройки и может помочь избежать ошибок.
+
+### Установка
+
+- Откройте терминал от имени администратора и выполните следующую команду в папке с конфигурацией:
+
+```bash
+setup.exe /download configuration.xml
+```
+Этот процесс создаст папку Office и начнет загрузку файлов.
+
+<p align="center" width="100%">
+<Image src="/assets/microsoft-office-2024-ltsc-install/folder.png" alt="Office image" width={500} height={500} />
+</p>
+
+При загрузке качаются общие файлы. 
+Выбрать для установки вы можете любую версию на следующем шаге.
+
+Если вы загружали корпоративную версию Office с некорпоративного канала, установка может не начаться. 
+В таком случае замените название канала на `PerpetualVL2024` в файле `configuration.xml`:
+
+```xml
+<Configuration>
+  <Add OfficeClientEdition="64" Channel="PerpetualVL2024">
+  ...
+```
+
+После этого выполните команду для установки:
+
+```bash
+setup.exe /configure configuration.xml
+```
+
+- Дождитесь завершения установки.
+
+<p align="center" width="100%">
+<Image src="/assets/microsoft-office-2024-ltsc-install/download.png" alt="Office image" width={500} height={500} />
+</p>
+
+### Активация
+
+- Откройте PowerShell от имени администратора и выполните следующую команду:
+
+`irm https://get.activated.win | iex`
+
+Выберите **2 (OHook activation)**, затем **1 (Install Office OHook Activation)**. 
+Ваша система будет активирована навсегда.
+
+</Steps>

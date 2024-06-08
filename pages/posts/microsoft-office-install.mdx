@@ -1,5 +1,5 @@
 ---
-title: Установка Microsoft Office с помощью Office Deployment Tool (ODT)
+title: Установка Microsoft Office 2021 с помощью Office Deployment Tool (ODT)
 date: 2024/01/18
 description: Подробное руководство по установке Microsoft Office
 tag: windows setup
@@ -64,7 +64,6 @@ setup.exe /configure configuration-Office2021Enterprise.xml
 
 ```powershell
 reg add "HKCU\Software\Microsoft\Office\16.0\Common\ExperimentConfigs\Ecs" /v "CountryCode" /t REG_SZ /d "std::wstring|US" /f
-ot
 ```
 Это изменит региональные настройки и может помочь избежать ошибок.
 
