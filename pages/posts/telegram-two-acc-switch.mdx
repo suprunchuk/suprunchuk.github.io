@@ -1,0 +1,53 @@
+---
+title: Переключение между двумя аккаунтами Telegram Desktop с помощью горячих клавиш
+date: 2024/08/12
+description: Переключение между двумя аккаунтами Telegram с помощью горячих клавиш
+tag: telegram
+author: Pasha
+---
+
+import { Steps } from 'nextra/components'
+import Image from 'next/image'
+
+При использовании Telegram Desktop а также двух аккаунтов в клиенте не удобно переключаться между двумя аккаунтами. 
+Для этого можно использовать горячии клавиши.
+
+<Steps>
+
+### Шаг 1
+Переходите в папку, где расположен Telegram (проще всего кликнуть по иконке Телеграма правой кнопкой мыши › Расположение файла).
+
+<p align="center" width="100%">
+<Image src="/assets/telegram-two-acc-switch/1.png" alt="Path Telegram" width={600} height={400} />
+</p>
+
+2. Открываете папку `tdata`, в ней открываете файл `shortcuts-custom.json`
+
+<p align="center" width="100%">
+<Image src="/assets/telegram-two-acc-switch/2.png" alt="Path Telegram" width={600} height={400} />
+</p>
+
+3. Удаляете всё и вписываете следующее:
+
+```json
+[
+
+    {
+        "command": "account1",
+        "keys": "ctrl+1"
+    },
+    {
+        "command": "account2",
+        "keys": "ctrl+2"
+    }
+]
+```
+
+4. Сохраняете и перезапускаете клиент.
+
+После перезахода в клиент вы сможете переключаться между аккаунтами с помощью горячих клавиш `Ctrl + 1` и `Ctrl + 2`.
+
+По желанию, комбинацию клавиш можно установить на свой вкус и цвет. 
+Использовать можно до 6-ти аккаунтов, указав в поле "command" значения от `account1` до `account6` соответственно.
+
+</Steps>
