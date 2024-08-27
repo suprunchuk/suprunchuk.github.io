@@ -8,7 +8,7 @@ const withNextra = require('nextra')({
 const nextConfig = {
   output: "export",
   // basePath: "/nextjs-github-pages",
-
+  transpilePackages: ["geist"],
   images: {
     unoptimized: true,
   },
