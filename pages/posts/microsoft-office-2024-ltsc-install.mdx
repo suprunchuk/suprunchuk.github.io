@@ -73,10 +73,14 @@ reg add "HKCU\Software\Microsoft\Office\16.0\Common\ExperimentConfigs\Ecs" /v "C
 
 ### Установка
 
-- Откройте терминал от имени администратора и выполните следующую команду в папке с конфигурацией:
+- В том же терминале перейдите в папку с конфигурацией и выполните следующую команду в папке с конфигурацией:
 
-```bash
-setup.exe /download configuration.xml
+```powershell
+cd .\Downloads
+```
+
+```powershell
+.\setup.exe /download .\configuration.xml
 ```
 Этот процесс создаст папку Office и начнет загрузку файлов.
 
