@@ -1,0 +1,82 @@
+---
+title: Установка Microsoft Office 2024 с помощью Office Deployment Tool (ODT)
+date: 2024/10/28
+description: Подробное руководство по установке Microsoft Office 2024. Бесплатно с официального сайта Microsoft.
+tag: windows setup office
+author: Pasha
+---
+
+import Image from 'next/image'
+import { Steps } from "nextra/components";
+import { Callout } from 'nextra/components'
+
+<br />
+<p align="center" width="100%">
+<Image src="/assets/microsoft-office-install-2024/2024.png" alt="Office image" width={800} height={800} />
+</p>
+
+# Установка Microsoft Office 2021 LTS с помощью Office Deployment Tool (ODT)
+
+Для установки Microsoft Office 2024 с использованием Office Deployment Tool (ODT), вам нужно выполнить следующие шаги:
+
+<Steps>
+### Скачивание Office Deployment Tool (ODT):
+
+-   Перейдите на [официальный сайт Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=49117).
+-   Нажмите "Download" (Скачать), чтобы загрузить Office Deployment Tool.
+-   Запустите, для извлечения файлов ODT. В результате получите файл `setup.exe` и несколько примеров файлов конфигураций.
+
+<p align="center" width="100%">
+<Image src="/assets/microsoft-office-install-2024/odt.png" alt="Office image" width={800} height={800} />
+</p>
+
+### Генерация файла конфигурации
+
+-   Перейдите на [официальный сайт конфигуратора Office](https://config.office.com/deploymentsettings) и создайте свой файл конфигурации, описывающий программы для установки. Скачайте полученный файл.
+
+
+<p align="center" width="100%">
+<Image src="/assets/microsoft-office-install-2024/office-1.png" alt="Office image" width={600} height={400} />
+</p>
+
+<p align="center" width="100%">
+<Image src="/assets/microsoft-office-install-2024/office-2.png" alt="Office image" width={600} height={400} />
+</p>
+
+Скачайте файл конфигурации под именем `configuration.xml`.
+
+
+### Установка
+
+<Callout type="warning" emoji="⚠️">
+Важно: Перед установкой необходимо настроить регион
+</Callout>
+
+- Откройте PowerShell от имени администратора и выполните следующую команду для установки региона US:
+
+```powershell
+reg add "HKCU\Software\Microsoft\Office\16.0\Common\ExperimentConfigs\Ecs" /v "CountryCode" /t REG_SZ /d "std::wstring|US" /f
+```
+
+- Поместите скачанный `setup.exe` и файл конфигурации (например, `configuration.xml`) в одну и ту же директорию.
+
+- Запустите установку с помощью команды:
+
+```powershell
+.\setup.exe /download .\configuration.xml
+```
+
+- Дождитесь завершения установки.
+
+Теперь у вас должен быть установлен Microsoft Office 2024 LTS. Поздравляю! 🎉
+
+### Активация
+
+- Откройте PowerShell от имени администратора и выполните следующую команду:
+
+`irm https://get.activated.win | iex`
+
+Выберите **2 (OHook activation)**, затем **1 (Install Office OHook Activation)**. 
+Ваша система будет активирована навсегда.
+
+</Steps>
