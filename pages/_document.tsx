@@ -1,11 +1,11 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   const meta = {
-    title: 'Next.js Blog Starter Kit',
-    description: 'Next.js portfolio',
-    image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png',
-  }
+    title: "Next.js Blog",
+    description: "Lifehacks and useful materials",
+    image: "https://assets.vercel.com/image/upload/v1646691291/front/try/default-landing-page-og-image-teal.png",
+  };
 
   return (
     <Html lang="en">
@@ -27,5 +27,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
