@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Pasha Suprunchuk]]></title>
+        <description><![CDATA[Pasha Suprunchuk]]></description>
+        <link>https://suprunchuk.github.io</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Mon, 28 Sep 2026 20:57:23 GMT</lastBuildDate>
+        <item>
+            <title><![CDATA[Подключение к нескольким Linux-серверам по SSH без пароля (из Windows)]]></title>
+            <description><![CDATA[Подключение к нескольким Linux-серверам по SSH без пароля]]></description>
+            <link>/posts/fast-connect-to-linux-ssh</link>
+            <guid isPermaLink="true">/posts/fast-connect-to-linux-ssh</guid>
+            <category><![CDATA[linux]]></category>
+            <dc:creator><![CDATA[Pasha]]></dc:creator>
+            <pubDate>Mon, 04 Aug 2025 21:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Установка Microsoft Office 2024 с помощью Office Deployment Tool (ODT)]]></title>
+            <description><![CDATA[Подробное руководство по установке Microsoft Office 2024. Бесплатно с официального сайта Microsoft.]]></description>
+            <link>/posts/microsoft-office-install-2024</link>
+            <guid isPermaLink="true">/posts/microsoft-office-install-2024</guid>
+            <category><![CDATA[windows setup office]]></category>
+            <dc:creator><![CDATA[Pasha]]></dc:creator>
+            <pubDate>Sun, 27 Oct 2024 21:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Переключение между двумя аккаунтами Telegram Desktop с помощью горячих клавиш]]></title>
+            <description><![CDATA[Переключение между двумя аккаунтами Telegram с помощью горячих клавиш]]></description>
+            <link>/posts/telegram-two-acc-switch</link>
+            <guid isPermaLink="true">/posts/telegram-two-acc-switch</guid>
+            <category><![CDATA[telegram]]></category>
+            <dc:creator><![CDATA[Pasha]]></dc:creator>
+            <pubDate>Sun, 11 Aug 2024 21:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

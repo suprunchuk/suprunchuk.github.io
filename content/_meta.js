@@ -1,0 +1,10 @@
+export default {
+  index: {
+    title: 'About',
+    type: 'page',
+  },
+  posts: {
+    title: 'Posts',
+    type: 'page',
+  },
+}
